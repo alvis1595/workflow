@@ -5,7 +5,7 @@
 
 - name: Obtener el hostname del servidor actual (servidor2
   ansible.builtin.command: hostname
-  register: servidor2_hostna
+  register: servidor2_hostname
 
 - name: Mostrar ambos hostnes
   ansible.builtin.debug:
