@@ -1,5 +1,5 @@
 ---
 - name: playbook uno
-  hosts: all
+  hosts: node_promeheus
   roles:
     role: 'roles/ObtenerH'
