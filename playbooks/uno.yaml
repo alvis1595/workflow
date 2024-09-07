@@ -2,4 +2,4 @@
 - name: playbook uno
   hosts: node_promeheus
   roles:
-    role: 'roles/ObtenerH'
+    - role: 'roles/ObtenerH'

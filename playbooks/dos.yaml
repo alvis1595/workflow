@@ -1,5 +1,5 @@
 ---
 - name: playbook uno
-  hosts: all
+  hosts: node_controller
   roles:
-    role: 'roles/UnirH'
+    - role: 'roles/UnirH'
