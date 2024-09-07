@@ -1,5 +1,6 @@
 ---
 - name: playbook uno
   hosts: node_promeheus
+  become: false
   roles:
     - role: 'roles/ObtnerH'
