@@ -1,0 +1,12 @@
+---
+- name: Mostrar el hostname del servidor1
+  ansible.builtin.debug:
+    msg: "El hostname del servidor1 es: {{ servidor1_hostname }}"
+
+- name: Obtener el hostname del servidor actual (servidor2
+  ansible.builtin.command: hostname
+  register: servidor2_hostna
+
+- name: Mostrar ambos hostnes
+  ansible.builtin.debug:
+    msg: "El hostname del servidor1 es: {{ servidor1_hostname }} y el de servidor2 es: {{ servidor2_hostname.stdout }}"
