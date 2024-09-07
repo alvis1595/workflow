@@ -1,7 +1,7 @@
 - name: Obtener el hostname
   ansible.builtin.command: hostname
-  register: servidor1_hostnam
-  
+  register: servidor1_hostname
+
 - name: Establecer el hostname como variable global
   ansible.builtin.set_stats:
     data:
